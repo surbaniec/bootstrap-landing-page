@@ -2,9 +2,16 @@ const btn = document.querySelector('.header__hamburger');
 const menu = document.querySelector('.menu');
 const logo = document.querySelector('.logo');
 
+// display menu while clicking hamburger
 btn.addEventListener('click', function() {
     menu.classList.toggle('active');
     logo.classList.toggle('white-color');
+})
+
+// hide menu while scrolling down
+window.addEventListener('scroll', function () {
+    menu.classList.remove('active');
+    logo.classList.remove('white-color');
 })
 
 const features = [...document.querySelectorAll('.features__item')];
@@ -13,6 +20,7 @@ const featuresImg = document.querySelector('.features__img');
 const featuresTitle = document.querySelector('.features__subtitle');
 const featuresText = document.querySelector('.features__info');
 
+// switch between features
 features.forEach(feature => {
     feature.addEventListener('click', function() {
         features.forEach(feature => {
@@ -39,6 +47,7 @@ features.forEach(feature => {
     })
 })
 
+// contact form validation
 const form = document.querySelector('.contact__form');
 const input = document.querySelector('.contact__input');
 const messageDiv = document.querySelector('.contact__form-message');

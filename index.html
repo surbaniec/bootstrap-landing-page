@@ -21,29 +21,46 @@
         <button class="header__hamburger navbar-toggler" type="button" >
           <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
-        <div class="menu">
-          <ul class="menu__ul">
-            <li class="menu__li">
-              <a class="menu__link" href="#">FEATURES</a>
+
+        <div class="menu-desktop">
+          <ul class="menu-desktop__ul">
+            <li class="menu-desktop__li">
+              <a class="menu-desktop__link" href="#">FEATURES</a>
             </li>
-            <li class="menu__li">
-              <a class="menu__link" href="#">PRICING</a>
+            <li class="menu-desktop__li">
+              <a class="menu-desktop__link" href="#">PRICING</a>
             </li>
-            <li class="menu__li">
-              <a class="menu__link" href="#">CONTACT</a>
+            <li class="menu-desktop__li">
+              <a class="menu-desktop__link" href="#">CONTACT</a>
             </li>
-            <li class="menu__li menu__li">
-              <a class="menu__link menu__link--login" href="#">LOGIN</a>
+            <li class="menu-desktop__li">
+              <a class="menu-desktop__link menu-desktop__link--login" href="#">LOGIN</a>
             </li>
           </ul>
-          <div class="menu__socials">
-            <img src="./images/icon-facebook.svg" alt="facebook" class="menu__socials-icon">
-            <img src="./images/icon-twitter.svg" alt="twitter" 
-            class="menu__socials-icon">
-          </div>
         </div>
-      </nav>
+    </div>
+    <div class="menu">
+      <ul class="menu__ul">
+        <li class="menu__li">
+          <a class="menu__link" href="#">FEATURES</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__link" href="#">PRICING</a>
+        </li>
+        <li class="menu__li">
+          <a class="menu__link" href="#">CONTACT</a>
+        </li>
+        <li class="menu__li menu__li">
+          <a class="menu__link menu__link--login" href="#">LOGIN</a>
+        </li>
+      </ul>
+        <div class="menu__socials">
+          <img src="./images/icon-facebook.svg" alt="facebook" class="menu__socials-icon">
+          <img src="./images/icon-twitter.svg" alt="twitter" 
+          class="menu__socials-icon">
+        </div>
+      </div>
+    </nav>
     <div class="container">
       <div class="header__hero">
         <img src="./images/illustration-hero.svg" alt="" class="header__img">
@@ -59,10 +76,8 @@
                 browser tab and see your sites load instantly. Try it for free.
               </p>
             </div>
-            <div class="col-6">
+            <div class="col-12">
               <button class="btn header__btn">Get it on Chrome</button>
-            </div>
-            <div class="col-6">
               <button class="btn header__btn header__btn--grey">Get it on Firefox</button>
             </div>
           </div>
@@ -102,6 +117,7 @@
       <div class="row">
         <div class="col-lg-6">
           <img src="./images/illustration-features-tab-1.svg" alt="" class="features__img">
+          <div class="features__bg"></div>
         </div>
         <div class="col-lg-6">
           <div class="features__box">
@@ -138,7 +154,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class="card extensions-card">
+          <div class="card extensions-card extensions-card--second">
             <img src="./images/logo-firefox.svg" class="card-img-top extensions-card__logo" alt="google chrome">
             <div class="card-body extensions-card__body">
               <h3 class="card-title extensions-card__title">Add to Firefox</h3>
@@ -150,7 +166,7 @@
         </div>
 
         <div class="col-lg-4">
-          <div class="card extensions-card">
+          <div class="card extensions-card extensions-card--third">
             <img src="./images/logo-opera.svg" class="card-img-top extensions-card__logo" alt="google chrome">
             <div class="card-body extensions-card__body">
               <h3 class="card-title extensions-card__title">Add to Opera</h3>
